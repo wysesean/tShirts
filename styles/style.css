@@ -84,38 +84,40 @@ img{
 
 #sizeButton{
 	position: relative;
-	display:inline-block;
-/*	background: white;
-*/}
+}
 
 .sizeDropDown{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
 	position: absolute;
 	width: 100%;
 	z-index: 1;
-	bottom:100%;
-/*	background: white;
-*/}
+	transform: translate(0,-25px);
+}
 
 #sizeButton .sizeDropDown{
 	visibility: hidden;
 	opacity: 0;
-/*	background: white;
-*/}
-#sizeButton:hover .sizeDropDown .material-icons{
+
+}
+
+ #sizeButton #iconContainer:hover .material-icons{
+	color: rgba(255, 255, 255, 1);
+}
+
+
+.changeBG #iconContainer .material-icons{
 	color: rgba(71, 163, 218, 1);
 }
 
  #sizeButton:hover .sizeDropDown{
 	visibility: visible; 
+	text-align: center;
 	opacity: 1;
 	width: 100%;
-	transition: opacity .5s ease-in-out;
+	bottom: 100%;
+	transform: translate(0,0);
+	transition: all .3s ease-in-out;
 	background: white;
 	border: 3px solid #47a3da;
-	padding: 10px;
 }
 
 
