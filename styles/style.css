@@ -12,14 +12,13 @@ img{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 25%;
+	max-width: 33%;
 	border: 3px solid #47a3da;
 }
 
 .turnBox{
 	align-self: flex-end;
 	border: 3px solid #47a3da;
-	padding: 0px;
 	margin: -3px;
 }
 
@@ -44,19 +43,29 @@ img{
 	border: 3px solid #47a3da;
 	display: flex;
 	justify-content: center;
-	padding: 2%;
+	padding: 10px;
 }
-
 
 .changeBG div:hover{
 	background: #47a3da;
+	cursor: pointer;
 }
 
 .changeBG div:hover .material-icons{
 	color: rgba(255, 255, 255, 1);
 }
 
-
+.colorButton #colorSquare{
+	width: 24px;
+	height: 24px;
+	margin: 0px;
+	margin-left: -3px;
+	padding: 3px;
+	background: #47a3da;
+}
+.changeBG div:nth-child(4):hover #colorSquare{
+	outline: 3px solid white;
+}
 
 #buttonBox div:last-child{
 	margin-right: -3px;
