@@ -1,31 +1,33 @@
 *{
 	box-sizing: border-box;
-	font-size:0;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
 img{
 	max-width:100%;
 }
 
-.shirtBox{
+
+.outLineBox{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	border: 3px solid lightblue;
 	max-width: 25%;
-	margin:0;
+	border: 3px solid #47a3da;
 }
 
 .turnBox{
 	align-self: flex-end;
-	border: 3px solid lightblue;
+	border: 3px solid #47a3da;
 	padding: 0px;
 	margin: -3px;
 }
 
+
 #imgBox{
+	align-self: center;
 	padding: 10px;
+
 }
 
 #buttonBox{
@@ -39,13 +41,30 @@ img{
 	margin: -3px;
 	margin-right: 0px;
 	width:100%;
-	border: 3px solid lightblue;
+	border: 3px solid #47a3da;
 	display: flex;
 	justify-content: center;
 	padding: 2%;
+}
+
+#buttonBox div:hover{
+	background: #47a3da;
+}
+
+.turnBox div:hover{
+	background: #47a3da;
 }
 
 #buttonBox div:last-child{
 	margin-right: -3px;
 }
 
+.infoBox{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 25%;
+	padding: 10px 0px 10px 0px;
+	font-size: 100%;
+	color: #47a3da;
+}
