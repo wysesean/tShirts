@@ -47,17 +47,25 @@ img{
 	padding: 2%;
 }
 
-#buttonBox div:hover{
+
+.changeBG div:hover{
 	background: #47a3da;
 }
 
-.turnBox div:hover{
-	background: #47a3da;
+.changeBG div:hover .material-icons{
+	color: rgba(255, 255, 255, 1);
 }
+
+
 
 #buttonBox div:last-child{
 	margin-right: -3px;
 }
+
+.material-icons{
+	color: rgba(71, 163, 218, 1);
+}
+
 
 .infoBox{
 	display: flex;
