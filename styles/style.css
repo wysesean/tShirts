@@ -50,6 +50,7 @@ input[type="checkbox"]:checked + label {
 
 label:hover{
 	background-color: #47a3da;
+	cursor: pointer;
 }
 
 label:hover .material-icons{
