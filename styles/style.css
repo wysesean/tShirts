@@ -83,12 +83,17 @@ img{
 	text-align: center;
 	margin:0;
 	opacity: 1;
-	width: 130%;
+	width: 100%;
 	bottom: 45px;
+	padding: 10px 0px 10px 0px;
 	transform: translate(0,0);
 	transition: all .3s ease-in-out;
 	background: white;
 	border: 3px solid #47a3da;
+}
+
+#sizeButton:hover .sizeDropDown:last-child{
+	padding-bottom: 0px;
 }
 
 .sizeDropDown #iconContainer:hover .material-icons{
@@ -99,9 +104,18 @@ img{
 .colorSquare{
 	width: 24px;
 	height: 24px;
+	margin: 10px;
 	background: #47a3da;
 }
 
+.colorIcon{
+	margin:0;
+}
+
+.blue{
+	background: #47a3da;
+
+}
 .pink{
 	background: #e577aa;
 }
@@ -115,7 +129,7 @@ img{
 }
 
 
-#colorButton:hover .colorSquare{
+#colorButton:hover .colorIcon{
 	outline: 3px solid white;
 }
 
@@ -131,16 +145,26 @@ img{
 	opacity: 0;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items:center;
+}
+
+.row{
+	display:flex;
+	flex-direction: row;
+}
+
+.colorDropDown .colorSquare:hover{
+	transform: scale(1.5,1.5);
 }
 
 #colorButton:hover .colorDropDown{
 	visibility: visible; 
 	text-align: center;
 	margin:0;
+	width: auto;
 	opacity: 1;
-	width: 200%;
-	height: 100px;
+	padding: 10px;
 	bottom: 45px;
 	transform: translate(0,0);
 	transition: all .3s ease-in-out;
