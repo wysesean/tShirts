@@ -22,11 +22,9 @@ img{
 	margin: -3px;
 }
 
-
 #imgBox{
 	align-self: center;
 	padding: 10px;
-
 }
 
 #buttonBox{
@@ -36,7 +34,7 @@ img{
 	width: 100%;
 }
 
-#buttonBox #refreshButton, #buttonBox #heartButton, #buttonBox #sizeButton, #buttonBox .colorButton{
+.buttonOutLine{
 	margin: -3px;
 	margin-right: 0px;
 	width:100%;
@@ -46,36 +44,17 @@ img{
 	padding: 10px;
 }
 
-.changeBG div:hover{
+#buttonBox #cartButton{
+	margin: -3px;
+}
+
+.changeBG:hover{
 	background: #47a3da;
 	cursor: pointer;
 }
 
-.changeBG div:hover .material-icons{
+.changeBG:hover .material-icons{
 	color: rgba(255, 255, 255, 1);
-}
-
-.colorButton #colorSquare{
-	width: 24px;
-	height: 24px;
-	margin: 0px;
-	margin-left: -3px;
-	padding: 3px;
-	background: #47a3da;
-}
-
-.changeBG div:nth-child(4):hover #colorSquare{
-	outline: 3px solid white;
-}
-
-#buttonBox #cartButton{
-	margin: -3px;
-	margin-right: -3px;
-	width:100%;
-	border: 3px solid #47a3da;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
 }
 
 .material-icons{
@@ -90,44 +69,113 @@ img{
 	position: absolute;
 	width: 100%;
 	z-index: 1;
-	transform: translate(0,-25px);
-}
-
-#sizeButton .sizeDropDown{
+	transform: translate(0,-50px);
 	visibility: hidden;
 	opacity: 0;
-
 }
 
- #sizeButton #iconContainer:hover .material-icons{
-	color: rgba(255, 255, 255, 1);
-}
-
-
-.changeBG #iconContainer .material-icons{
+#iconContainer .material-icons{
 	color: rgba(71, 163, 218, 1);
 }
 
- #sizeButton:hover .sizeDropDown{
+#sizeButton:hover .sizeDropDown{
 	visibility: visible; 
 	text-align: center;
+	margin:0;
 	opacity: 1;
-	width: 100%;
-	bottom: 100%;
+	width: 130%;
+	bottom: 45px;
 	transform: translate(0,0);
 	transition: all .3s ease-in-out;
 	background: white;
 	border: 3px solid #47a3da;
 }
 
+.sizeDropDown #iconContainer:hover .material-icons{
+	color: rgba(255, 255, 255, 1);
+	font-size: 30px;
+}
 
+.colorSquare{
+	width: 24px;
+	height: 24px;
+	background: #47a3da;
+}
+
+.pink{
+	background: #e577aa;
+}
+
+.orange{
+	background: #e5b178;
+}
+
+.green{
+	background: #7abe93;
+}
+
+
+#colorButton:hover .colorSquare{
+	outline: 3px solid white;
+}
+
+#colorButton{
+	position:relative;
+}
+
+.colorDropDown{
+	position: absolute;
+	z-index: 1;
+	transform: translate(0,-50px);
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+#colorButton:hover .colorDropDown{
+	visibility: visible; 
+	text-align: center;
+	margin:0;
+	opacity: 1;
+	width: 200%;
+	height: 100px;
+	bottom: 45px;
+	transform: translate(0,0);
+	transition: all .3s ease-in-out;
+	background: white;
+	border: 3px solid #47a3da;
+}
 
 .infoBox{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 25%;
-	padding: 10px 0px 10px 0px;
-	font-size: 100%;
+	width: 33%;
+	padding: 0px 0px 10px 0px;
 	color: #47a3da;
+	font-size: 30px; 
 }
+
+#priceBox{
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
