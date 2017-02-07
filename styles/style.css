@@ -11,25 +11,14 @@ h1{
 	text-align:center;
 	color:#47a3da ;
 }
-
-#anotherMainContainer{
-	overflow-y: auto;
-}
 #mainContainer{
 	margin: 0 auto;
 	width: 80%;
-	max-height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-
 }
 
 .shirtBox{
@@ -42,7 +31,6 @@ h1{
 	justify-content: center;
 	border: 3px solid #47a3da;
 }
-
 
 .turnBox{
 	align-self: flex-end;
@@ -84,74 +72,10 @@ input[type="checkbox"]:checked{
 }
 
 
-/*#imgBox{
+#imgBox{
 	align-self: center;
 	padding: 10px;
-}*/
-
-
-
-
-#hideMe{
-	visibility: hidden;
 }
-
-#shirtContainer img{
-	max-width:100%;
-	max-height:100%;
-/*	margin-bottom:-360px; 
-*/
-}
-
-.flip-container {
-	perspective: 1000px;
-	transform: translateY(-50%);
-}
-	/* flip the pane when hovered */
-
-
-.flip-container, .front, .back {
-	width: 100%;
-}
-
-/* flip speed goes here */
-.flipper{
-	transition: all 5s ease-in-out;
-	transform-style: preserve-3d;
-	max-width: 100%;
-	background: green;
-	position:relative;
-	transform: translateY(-50%);
-}
-
-.flipper:target{
-	transform: rotateY(180deg);
-}
-
-
-/* hide back of pane during swap */
-.front, .back{
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg) translateY(-100%);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg) translateY(-100%);
-}
-
-
-
-
 
 #buttonBox{
 	display: flex;
